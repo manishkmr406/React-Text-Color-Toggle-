@@ -5,8 +5,8 @@ const App = () => {
 //code here 
   return (
     <div id="main">
-      <p className={} >Newton School</p>
-      <button id='button' onClick={}>Change Style</button>
+      <p className={redColor} >Newton School</p>
+      <button id='button' onClick={document.querySelector('p').classList.toggle('blueColor')}>Change Style</button>
     </div>
   )
 }
