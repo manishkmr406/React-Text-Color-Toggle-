@@ -6,7 +6,9 @@ const App = () => {
   return (
     <div id="main">
       <p className={redColor} >Newton School</p>
-      <button id='button' onClick={document.querySelector('p').classList.toggle('blueColor')}>Change Style</button>
+      <button id='button' onClick={() =>{
+      document.querySelector('p').classList.toggle('blueColor');
+      }}>Change Style</button>
     </div>
   )
 }
