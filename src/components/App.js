@@ -5,7 +5,12 @@ const App = () => {
 //code here 
   const [style, setStyle] = useState("redColor");
   const changeStyle = () => {
+    if(style){
     setStyle("blueColor");
+    }
+    else{
+    setStyle("redColor");
+    }
   };
   return (
     <div id="main">
