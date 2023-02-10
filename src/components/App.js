@@ -10,14 +10,14 @@ const App = () => {
     setValue(!value);
   }
   useEffect( () => {
-    if(value===true){
+    if(value===false){
     setStyle("blueColor");
     }
     else{
     setStyle("redColor");
     }
   },[value]);
-  
+
   return (
     <div id="main">
       <p className={style} >Newton School</p>
