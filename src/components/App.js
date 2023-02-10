@@ -3,12 +3,14 @@ import '../styles/App.css';
 
 const App = () => {
 //code here 
+  const [style, setStyle] = useState("redColor");
+  const changeStyle = () => {
+    setStyle("blueColor");
+  };
   return (
     <div id="main">
-      <p className={redColor} >Newton School</p>
-      <button id='button' onClick={() =>{
-      document.querySelector('p').classList.toggle('blueColor');
-      }}>Change Style</button>
+      <p className={style} >Newton School</p>
+      <button id='button' onClick={changeStyle}>Change Style</button>
     </div>
   )
 }
