@@ -4,14 +4,20 @@ import '../styles/App.css';
 const App = () => {
 //code here 
   const [style, setStyle] = useState("redColor");
-  const changeStyle = () => {
-    if(style){
+  const [value, setValue]= useState(true);
+  
+  function changeStyle(){
+    setValue(!value);
+  }
+  useEffect( () => {
+    if(value===true){
     setStyle("blueColor");
     }
     else{
     setStyle("redColor");
     }
-  };
+  },[value]);
+  
   return (
     <div id="main">
       <p className={style} >Newton School</p>
